@@ -13,5 +13,5 @@
   justify-content: center; /* Horizontally align content in the center */
   gap: 0.5rem; /* Space between button icon and text */
   font-size: 1rem; /* Font size for the text */
-  width: fit-content; /* Button width adjusts to content */
+  width: fit-content !important; /* Button width adjusts to content */
 }

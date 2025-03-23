@@ -10,7 +10,6 @@
   padding: 15px 20px; /* Padding around navbar */
   border-bottom: 1px solid #ddd; /* Light gray border at the bottom */
   position: relative; /* Position relative for z-index control */
-  font-family: "Lato"; /* Font family for the navbar */
   z-index: 2; /* Ensure the navbar is above other elements */
 }
 

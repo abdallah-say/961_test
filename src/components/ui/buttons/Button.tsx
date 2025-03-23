@@ -19,9 +19,9 @@ export default function Button({
   return (
     <button
       type={type}
-      className={`${
-        className === "closeButton" ? s.closeButton : s.buttonContainer
-      } ${className || ""}`}
+      className={`${s.buttonContainer} ${className || ""} ${
+        className === "closeButton" ? s.closeButton : ""
+      }`}
       onClick={action}
     >
       {children} {/* Render button content */}
