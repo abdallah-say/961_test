@@ -1,0 +1,53 @@
+/* Modal Container Styles */
+.modal__container {
+  height: 100%; /* Full height of the viewport */
+  width: 100%; /* Full width of the viewport */
+  position: fixed; /* Fixed position to overlay the entire screen */
+  z-index: 9999; /* Ensure modal is on top of other elements */
+  top: 0; /* Align container to the top of the viewport */
+  left: 0; /* Align container to the left of the viewport */
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.3
+  ); /* Semi-transparent black background for overlay */
+}
+
+/* Modal Box Styles */
+.modal {
+  width: 400px; /* Fixed width for the modal */
+  background-color: white; /* White background for the modal content */
+  position: fixed; /* Fixed position for the modal */
+  top: 50%; /* Position modal vertically at the center */
+  left: 50%; /* Position modal horizontally at the center */
+  transform: translate(
+    -50%,
+    -50%
+  ); /* Adjust the modal's position to truly center it */
+  padding: 1.5rem; /* Padding inside the modal */
+  border-radius: 5px; /* Rounded corners */
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; /* Shadow effect around the modal */
+}
+
+/* Modal Header Styles */
+.modal__header {
+  display: flex; /* Flexbox layout for header */
+  justify-content: space-between; /* Space between header content */
+  align-items: center; /* Vertically center the content */
+  margin-bottom: 1rem; /* Space below the header */
+}
+
+/* Modal Header Title Styles */
+.modal__header h2 {
+  font-size: 1.3rem; /* Title font size */
+}
+
+/* Close Button Styles */
+.modal__header button {
+  background-color: transparent; /* Transparent background for the button */
+  color: #999; /* Gray color for the button text */
+  border: none; /* No border for the button */
+  font-size: 24px; /* Font size for the close button */
+  cursor: pointer; /* Pointer cursor on hover */
+}

@@ -1,0 +1,49 @@
+/* Side Button Container Styles */
+.sidebtnContainer {
+  display: flex; /* Flexbox layout for aligning child elements horizontally */
+  width: 100%; /* Full width of the parent container */
+  border: 0; /* Remove default border */
+  outline: 0; /* Remove default outline */
+  background: transparent; /* Transparent background */
+  gap: 1rem; /* Space between child elements */
+  align-items: center; /* Vertically center align items */
+  padding: 0 1rem; /* Padding on left and right */
+  cursor: pointer; /* Pointer cursor on hover */
+  padding: 0.5rem 1rem; /* Padding for button size */
+  border-radius: 5px; /* Rounded corners */
+
+  /* Hover effect to change background color */
+  &:hover {
+    background: #fef2f2; /* Light red background on hover */
+  }
+}
+
+/* Active state styles for the side button */
+.active {
+  background: #fef2f2; /* Light red background when active */
+  color: #ff0010; /* Red text color when active */
+
+  .sidebtnLogo {
+    color: #ff0010; /* Red color for the icon/logo when active */
+  }
+}
+
+/* Logo/Icon in the side button */
+.sidebtnLogo {
+  display: flex; /* Flexbox layout for centering the icon/logo */
+  align-items: center; /* Vertically center align */
+  justify-content: center; /* Horizontally center align */
+  width: 24px; /* Fixed width for the logo/icon */
+  height: 24px; /* Fixed height for the logo/icon */
+
+  /* Adjust font size for the first child (icon) */
+  &:first-child {
+    font-size: 1.2rem; /* Larger font size for the first icon */
+  }
+}
+
+/* Text style in the side button */
+.sidebtnText {
+  font-size: 1rem; /* Set font size for the button text */
+  font-weight: 500; /* Medium font weight */
+}

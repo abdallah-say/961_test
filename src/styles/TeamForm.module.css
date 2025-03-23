@@ -1,0 +1,237 @@
+/* Form Container */
+.form__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Form Layout */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  background: #fff;
+}
+
+/* Form Group */
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Label Styling */
+.label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #333;
+}
+
+/* Input Styling */
+.form__group input {
+  border-radius: 5px;
+  padding: 0.5rem;
+  outline: none;
+  border: 1px solid #ddd;
+  transition: 0.3s ease-in-out all;
+}
+
+/* Input Focus Styling */
+.form__group input:focus {
+  border: 1px solid #ff0010;
+}
+
+/* Role Option Styles */
+.role__option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+/* Hover Effect for Role Option */
+.role__option:hover {
+  background-color: #f8f8f8;
+}
+
+/* Label Inside Role Option */
+.role__option label {
+  cursor: pointer;
+}
+
+/* Hide Input Inside Role Option */
+.role__option input {
+  display: none;
+}
+
+/* Selected Features (Chips) */
+.selectedFeatures {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.selectedFeatures .Feature {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 7px 10px;
+  font-size: 0.85rem;
+  cursor: default;
+}
+
+/* Radio Button Label Styling */
+.radioLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.radioLabel strong {
+  font-size: 1rem;
+  color: #222;
+}
+
+.radioLabel span {
+  font-size: 0.8rem;
+  color: #666;
+}
+
+/* Selected Role Option Styling */
+.selected {
+  background-color: #ff00001a;
+  border-color: #ff0010;
+  position: relative;
+}
+
+/* Hover Effect for Selected Role Option */
+.selected:hover {
+  background-color: #ff000033;
+}
+
+/* Check Icon in Role Option */
+.role__option .checkIcon {
+  position: absolute;
+  color: transparent;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #ddd;
+  border-radius: 20rem;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Selected Check Icon Styling */
+.selected .checkIcon {
+  border: 1px solid #ff0010;
+  color: #fff;
+  background-color: #ff0010;
+}
+
+/* Brand Input Wrapper */
+.brand__inputWrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Brand Input Styling */
+.brand__inputWrapper input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+/* Brand Button Styling */
+.brand__inputWrapper button {
+  background-color: #ff0010;
+  color: #fff;
+  border: none;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effect for Brand Button */
+.brand__inputWrapper button:hover {
+  background-color: #cc000a;
+}
+
+/* Brand Chips (Selected Brands) */
+.brand__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* Individual Brand Chip Styling */
+.brand__chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 5px 10px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 10px;
+  border: 1px solid #ff0010;
+  color: white;
+  font-size: 0.9rem;
+}
+
+/* Brand Chip Button (Remove Chip) */
+.brand__chip button {
+  font-size: 1rem;
+  font-weight: bold;
+  background: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Hover Effect for Brand Chip Button */
+.brand__chip button:hover {
+  color: black;
+}
+
+/* Form Buttons Section */
+.form__buttons {
+  display: flex;
+  width: 100%;
+  justify-content: right;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Submit Button Styling */
+.form button[type="submit"] {
+  background-color: #ff0010;
+  color: #fff;
+  border: none;
+  padding: 8px 10px;
+  width: fit-content;
+  border-radius: 5px;
+  font-size: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Hover Effect for Submit Button */
+.form button[type="submit"]:hover {
+  background-color: #cc000a;
+}

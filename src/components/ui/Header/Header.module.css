@@ -1,0 +1,17 @@
+/* Header Container Styles */
+.HeaderContainer {
+  width: 100%; /* Full width of the container */
+  display: flex; /* Use flexbox layout */
+  align-items: center; /* Vertically align items in the center */
+  justify-content: space-between; /* Space out the items evenly between left and right */
+}
+
+/* Header Button Styles */
+.HeaderButton {
+  display: flex; /* Use flexbox for button layout */
+  align-items: center; /* Vertically align button content in the center */
+  justify-content: center; /* Horizontally align content in the center */
+  gap: 0.5rem; /* Space between button icon and text */
+  font-size: 1rem; /* Font size for the text */
+  width: fit-content; /* Button width adjusts to content */
+}

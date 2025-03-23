@@ -1,0 +1,111 @@
+/* Google Font Import */
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap");
+
+/* Navbar Styles */
+.navbar {
+  display: flex; /* Flexbox layout for horizontal alignment */
+  justify-content: space-between; /* Space between the logo and menu */
+  align-items: center; /* Vertically center content */
+  background: white; /* White background */
+  padding: 15px 20px; /* Padding around navbar */
+  border-bottom: 1px solid #ddd; /* Light gray border at the bottom */
+  position: relative; /* Position relative for z-index control */
+  font-family: "Lato"; /* Font family for the navbar */
+  z-index: 2; /* Ensure the navbar is above other elements */
+}
+
+/* Logo Styling */
+.logo {
+  display: flex; /* Flexbox layout for logo content */
+  align-items: center; /* Vertically align the logo text and icon */
+  font-size: 1rem; /* Font size */
+  gap: 10px; /* Space between the logo elements */
+  font-weight: bold; /* Bold font weight */
+}
+
+/* Red Color Class for Branding */
+.red {
+  color: #ff0010; /* Red color */
+  font-size: 1.5rem; /* Larger font size for emphasis */
+}
+
+/* Menu Button Styles */
+.nav__menu {
+  background-color: #ff0010; /* Red background for the menu */
+  border: 0; /* Remove default border */
+  outline: 0; /* Remove outline */
+  border-radius: 5px; /* Rounded corners */
+  color: #fff; /* White text color */
+  display: none; /* Initially hidden */
+}
+
+/* Menu Button Inside the Navbar */
+.nav__menu button {
+  background: none; /* No background */
+  display: flex; /* Flexbox layout */
+  align-items: center; /* Vertically align icon/text */
+  padding: 6px; /* Padding around the button */
+  border: none; /* Remove border */
+  color: #fff; /* White text */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-size: 1.2rem; /* Larger font size */
+}
+
+/* Media Query for Small Screens (Burger Menu) */
+@media (max-width: 768px) {
+  .nav__menu {
+    display: flex; /* Display the menu on small screens */
+  }
+}
+
+/* Overlay Background */
+.overlay {
+  position: fixed; /* Fixed overlay to cover the entire screen */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent black background */
+  display: flex; /* Flexbox layout */
+  justify-content: flex-start; /* Align overlay content to the left */
+}
+
+/* Sidebar Styling */
+.sidebar {
+  background: white; /* White background for the sidebar */
+  width: 250px; /* Set width of the sidebar */
+  height: 100vh; /* Full height */
+  padding: 20px; /* Padding inside the sidebar */
+  display: flex; /* Flexbox layout */
+  flex-direction: column; /* Stack elements vertically */
+  gap: 15px; /* Space between items */
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2); /* Shadow effect for the sidebar */
+}
+
+/* Button Styles */
+.button {
+  width: 100%; /* Full width */
+  border: 0; /* Remove border */
+  outline: 0; /* Remove outline */
+  background: none; /* No background */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  transition: 0.3s ease-in-out all; /* Smooth transition on hover */
+  cursor: pointer; /* Pointer cursor on hover */
+  color: #333; /* Dark gray text */
+}
+
+/* Button Hover Effect */
+.button:hover {
+  color: #ff0010; /* Change color to red on hover */
+}
+
+/* Active Button Styles */
+.active {
+  width: 100%; /* Full width */
+  border: 0; /* Remove border */
+  outline: 0; /* Remove outline */
+  background: #ff0010; /* Red background */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.5rem 1rem; /* Padding inside the button */
+  color: #fff; /* White text */
+}

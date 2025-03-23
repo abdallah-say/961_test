@@ -1,0 +1,30 @@
+/* Button Container Styles */
+.buttonContainer {
+  background-color: #ff0010; /* Red background */
+  width: 100%; /* Full width */
+  padding: 0.5rem; /* Padding around the button */
+  color: #fff; /* White text */
+  border: 0; /* Remove border */
+  outline: 0; /* Remove outline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 1.2rem; /* Larger font size */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Close Button Styles */
+.closeButton {
+  background-color: transparent; /* Transparent background */
+  width: fit-content; /* Fit content width */
+  padding: 0.5rem; /* Padding inside the button */
+  color: #444c5a; /* Dark gray text */
+  border: 0; /* Remove border */
+  outline: 0; /* Remove outline */
+  border-radius: 5px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+
+  /* Hover effect: Underline text */
+  &:hover {
+    text-decoration: underline; /* Underline text on hover */
+  }
+}

@@ -1,0 +1,45 @@
+/* Base Styles for .team__members__container */
+.team__members__container {
+  flex-basis: 80%;
+  background-color: #f9fafc;
+  height: calc(100vh - 64px); /* Full height minus the header */
+  display: flex;
+  position: relative;
+  padding: 2rem;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Responsive Styles for smaller screens */
+@media only screen and (max-width: 768px) {
+  .team__members__container {
+    flex-basis: 100%; /* Take full width on smaller screens */
+    padding: 1rem; /* Reduce padding */
+  }
+}
+
+/* Search Bar Styles */
+.team__members__container .SearchBar {
+  display: flex;
+  width: 100%;
+}
+
+/* Modal Message Styles */
+.team__members__container .modal__message {
+  color: #666;
+  padding: 0 0 1.5rem 0;
+}
+
+/* Modal Actions (Buttons) */
+.team__members__container .modal__actions {
+  display: flex;
+  flex-direction: row-reverse; /* Align buttons to the right */
+  gap: 1rem;
+}
+
+/* Delete Button Styling */
+.team__members__container .modal__actions .delete__button {
+  width: fit-content; /* Fit content to button size */
+  font-size: 0.9rem; /* Slightly smaller font size */
+  padding: 10px 12px; /* Padding for better click area */
+}

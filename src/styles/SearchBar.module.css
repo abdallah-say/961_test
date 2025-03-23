@@ -1,0 +1,28 @@
+/* Search Bar Container */
+.SearchBarContainer {
+  width: 100%;
+  display: flex;
+  position: relative;
+  border: 1px solid #eee; /* Light border around the container */
+  border-radius: 5px; /* Rounded corners */
+  padding: 0.5rem; /* Padding inside the container */
+  gap: 0.5rem; /* Gap between child elements */
+  align-items: center; /* Vertically center the content */
+  background-color: #fff; /* White background */
+}
+
+/* Search Icon */
+.SearchIcon {
+  color: #555; /* Dark gray color for the icon */
+  height: 100%;
+  display: flex;
+  align-items: center; /* Center icon vertically */
+}
+
+/* Search Input */
+.SearchInput {
+  border: 0; /* Remove border */
+  width: 100%; /* Take full width of container */
+  height: 100%; /* Full height to match container */
+  outline: 0; /* Remove focus outline */
+}
